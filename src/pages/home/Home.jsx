@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import axios from 'axios';
 import "./home.scss";
 
-const socket = io('https://chat-b-nine.vercel.app');
+const socket = io('https://chat-b-rdcs-jkhkyjb7l-imjustmatthews-projects.vercel.app');
 
 const Home = () => {
     const [rooms, setRooms] = useState([]);
@@ -15,7 +15,7 @@ const Home = () => {
         // Načíst dostupné servery při načtení komponenty
         const fetchRooms = async () => {
             try {
-                const response = await axios.get('https://chat-b-nine.vercel.app/api/rooms'); // Opravená cesta k API
+                const response = await axios.get('https://chat-b-rdcs-jkhkyjb7l-imjustmatthews-projects.vercel.app/api/rooms'); // Opravená cesta k API
                 setRooms(response.data);
             } catch (error) {
                 console.error('Error fetching rooms:', error);

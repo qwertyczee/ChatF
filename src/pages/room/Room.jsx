@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import "./room.scss";
 
 // Move socket connection outside the component
-const socket = io('https://chat-b-nine.vercel.app');
+const socket = io('https://chat-b-rdcs-jkhkyjb7l-imjustmatthews-projects.vercel.app');
 
 const Room = () => {
   const { id } = useParams(); // Get room ID from URL
